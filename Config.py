@@ -95,10 +95,10 @@ genai.GenerativeModel.generate_content = _retry_on_quota_error
 
 # ⚠️ ใส่ API Key
 API_KEYS = [
-    "AIzaSyBUbet5_GttDdeHWPqFsoABvIaIbSxc5Kk",
-    "AIzaSyBoER95iWm-8G7PE5CSon3kTzdkq_uN9uw",
-    "AIzaSyBzfWWfU2ijVXLTji_WuBTyvzyOPI0vkAQ",
-    "AIzaSyAmu8vdtLYgYf6pSIJJfnd5AQPV3cK2Zr8",
+    "ใส่ API คีย์ตรงนี้", # API Key 1
+    "ใส่ API คีย์ตรงนี้", # API Key 2
+    "ใส่ API คีย์ตรงนี้", # API Key 3
+    "ใส่ API คีย์ตรงนี้",  # API Key 4 ....
 ]
 
 def get_fallback_config_list():
