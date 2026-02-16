@@ -69,13 +69,21 @@ user_pitch_content = input(">>> ")
 
 # สั่งงาน Admin โดยยัดเยียด "บทเรียนในอดีต" ให้ Data รู้ด้วย
 initial_prompt = f"""
-[SCENARIO: PITCH DAY REHEARSAL]
-We are presenting our project: "{user_pitch_content}"
+[SCENARIO: GADGET PRESENTATION DEFENSE ROOM]
 
-Mr. Shark & Dr. Logic: Start attacking this pitch immediately! Find the weak points!
-The CEO & Wingman: Defend our project!
+We are rehearsing a class presentation about this gadget:
+"{user_pitch_content}"
 
-ACTION!
+Professor Critical & Curious Classmate:
+Your mission is to challenge this presentation like a real Q&A session.
+Ask the kinds of questions teachers and students would ask.
+Find unclear slides, weak logic, missing data, or confusing explanations.
+
+Presenter & Tech Assistant:
+Defend clearly, like a student presenting in class.
+Answer as if this is the real presentation day.
+
+Start the Q&A simulation now.
 """
 
 # เริ่มการประชุม
@@ -95,7 +103,7 @@ save_choice = input("ต้องการบันทึก 'พล็อตแ
 if save_choice.lower() == 'y':
     summary = input("สรุปพล็อตย่อ (Copy จากที่คุยกันมาวาง): ")
     feedback = input("สรุปผลตอบรับ/จุดเด่นจุดด้อย (Copy คำวิจารณ์ของ Data มาวาง): ")
-    save_project_memory(user_idea, summary, feedback)
+    save_project_memory( summary, feedback)
     print("💾 Saved! เริ่มเรื่องใหม่ได้เลย (รันโปรแกรมใหม่)")
 else:
     print("🗑️ Discarded. ข้อมูลเรื่องนี้จะหายไปตลอดกาล")
